@@ -1,19 +1,69 @@
-336 RUTransit Reservation System
-Group 36 Members: Arianna Morales, Chinyere Ugwuanyi, Ayush Gupta, Oluwanifemi Kayode-Alese
+RUTransit Reservation System - Group 36
+====================================
 
-RUTransit  is a train reservation system. It is an online railway booking system that allows customers to book train reservations and view their reservations. It also allows another group of people, "customer representatives," to assist customers in making reservations. Lastly, it will enable an admin to add more customer representatives, monitor sales, and view all aspects of the reservation/booking system to ensure that it is functional. This system is built with the use of Java, HTML, MySQL, and JDBC to create an interface on a local server. We will have a demo video to see more about the functionality of the project.
+Team Members:
+-------------
+- Arianna Morales
+- Chinyere Ugwuanyi
+- Ayush Gupta
+- Oluwanifemi Kayode-Alese
 
-Below is some credential information already in the system and can be used to test it out. The system allows for registering more customers and customer representatives on the local server directly but not another admin account.
+----------------------------------------
 
-Admin Credentials:
-Username:
-Password:
+About RUTransit
+---------------
+RUTransit is an online train reservation system that enables the following functionalities:
 
-Customer Representative Credentials:
-Username:
-Password:
+1. **Customers** can book and view their train reservations.
+2. **Customer Representatives** assist customers in making reservations.
+3. **Admins** can:
+   - Add customer representatives.
+   - Monitor sales and reservation data.
+   - View all aspects of the booking system to ensure proper functionality.
 
-Customer Credentials:
-Username:
-Password:
+----------------------------------------
+
+Technologies Used:
+------------------
+- Java
+- HTML
+- MySQL
+- JDBC
+
+----------------------------------------
+
+System Features:
+----------------
+- **Customer Registration**: Allows customers to create an account book and view their reservations.
+- **Customer Representative Role**: Assists customers with booking and managing reservations.
+- **Admin Role**: Manages system users (excluding admin accounts), monitors sales, and oversees the functionality of the entire reservation system.
+
+----------------------------------------
+
+How to Test the System:
+------------------------
+**Admin Credentials:**
+- Username: 
+- Password: 
+
+**Customer Representative Credentials:**
+- Username: 
+- Password: 
+
+**Customer Credentials:**
+- Username: 
+- Password: 
+
+----------------------------------------
+
+Demo Video
+-----------
+A demo video is available to showcase the functionality of the RUTransit Reservation System. You can view it here: [Demo Video Link]
+
+----------------------------------------
+
+Contact Information:
+--------------------
+For more details or inquiries, please reach out to:
+- Members of Group 36
 
