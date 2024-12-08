@@ -8,9 +8,8 @@ Team Members:
 - Ayush Gupta
 - Oluwanifemi Kayode-Alese
 
-----------------------------------------
 
-### About RUTransit
+About RUTransit
 ---------------
 RUTransit is an online train reservation system that enables the following functionalities:
 
@@ -21,7 +20,6 @@ RUTransit is an online train reservation system that enables the following funct
    - Monitor sales and reservation data.
    - View all aspects of the booking system to ensure proper functionality.
 
-----------------------------------------
 
 Technologies Used:
 ------------------
@@ -30,7 +28,6 @@ Technologies Used:
 - MySQL
 - JDBC
 
-----------------------------------------
 
 System Features:
 ----------------
@@ -38,7 +35,6 @@ System Features:
 - Customer Representative Role: Assists customers with booking and managing reservations.
 - Admin Role: Manages system users (excluding admin accounts), monitors sales, and oversees the functionality of the entire reservation system.
 
-----------------------------------------
 
 How to Run the Application:
 ---------------------------
@@ -67,7 +63,6 @@ Demo Video
 -----------
 A demo video is available to showcase the functionality of the RUTransit Reservation System. You can view it here: [Demo Video Link]
 
-----------------------------------------
 
 Contact Information:
 --------------------
