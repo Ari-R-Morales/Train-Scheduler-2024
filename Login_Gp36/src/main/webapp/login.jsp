@@ -34,9 +34,11 @@
                 if (resultCustomer.next()) {
                     isValidUser = true;
                     userType = "customer";
+                    int customerId = resultCustomer.getInt("customer_id");
 
                     // Create a session for the user
                     HttpSession userSession = request.getSession();
+                    userSession.setAttribute("customer_id", customerId);
                     userSession.setAttribute("username", username);
                     userSession.setAttribute("userType", userType);
 
@@ -56,9 +58,11 @@
                 if (resultEmployee.next()) {
                     isValidUser = true;
                     userType = resultEmployee.getString("role"); // Retrieve role (Admin/Customer Representative)
+                    int employeeId = resultEmployee.getInt("employee_id"); // Retrieve employee_id
 
                     // Create a session for the user
                     HttpSession userSession = request.getSession();
+                    userSession.setAttribute("employee_id", employeeId); // Store employee_id in session
                     userSession.setAttribute("username", username);
                     userSession.setAttribute("userType", userType);
 
