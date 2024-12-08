@@ -57,8 +57,6 @@ One Customer's Credentials:
 - Username: ayushkgu
 - Password: 123
 
-----------------------------------------
-
 Demo Video
 -----------
 A demo video is available to showcase the functionality of the RUTransit Reservation System. You can view it here: [Demo Video Link]
