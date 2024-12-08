@@ -124,5 +124,7 @@
             }
         }
     %>
+    
+        <p><a href="customerPage.jsp">Back to Dashboard</a></p>
 </body>
 </html>

@@ -29,12 +29,13 @@
                 ApplicationDB db = new ApplicationDB();
                 Connection con = db.getConnection();
 
-                String sql = "SELECT r.reservation_id, r.reservation_date, c.first_name, c.last_name, c.email, ts.transit_line_name, ts.departure_datetime " +
+                String sql = "SELECT CONCAT(c.first_name, ' ', c.last_name) AS customer_name, COUNT(r.reservation_id) AS number_of_bookings, SUM(r.total_fare) AS total_fare " +
                              "FROM Reservations r " +
                              "JOIN Customers c ON r.customer_id = c.customer_id " +
                              "JOIN Train_Schedules ts ON r.schedule_id = ts.schedule_id " +
                              "WHERE ts.transit_line_name = ? AND DATE(ts.departure_datetime) = ? " +
-                             "ORDER BY r.reservation_date DESC";
+                             "GROUP BY c.customer_id, c.first_name, c.last_name " +
+                             "ORDER BY number_of_bookings DESC";
 
                 PreparedStatement pstmt = con.prepareStatement(sql);
                 pstmt.setString(1, transitLine);
@@ -46,15 +47,12 @@
                     out.println("<p>No customers found for the specified transit line and date.</p>");
                 } else {
                     out.println("<table border='1'>");
-                    out.println("<tr><th>Reservation ID</th><th>Customer Name</th><th>Email</th><th>Transit Line</th><th>Departure Datetime</th><th>Reservation Date</th></tr>");
+                    out.println("<tr><th>Customer Name</th><th>Number of Bookings</th><th>Total Fare</th></tr>");
                     while (rs.next()) {
                         out.println("<tr>");
-                        out.println("<td>" + rs.getInt("reservation_id") + "</td>");
-                        out.println("<td>" + rs.getString("first_name") + " " + rs.getString("last_name") + "</td>");
-                        out.println("<td>" + rs.getString("email") + "</td>");
-                        out.println("<td>" + rs.getString("transit_line_name") + "</td>");
-                        out.println("<td>" + rs.getTimestamp("departure_datetime") + "</td>");
-                        out.println("<td>" + rs.getTimestamp("reservation_date") + "</td>");
+                        out.println("<td>" + rs.getString("customer_name") + "</td>");
+                        out.println("<td>" + rs.getInt("number_of_bookings") + "</td>");
+                        out.println("<td>$" + rs.getDouble("total_fare") + "</td>");
                         out.println("</tr>");
                     }
                     out.println("</table>");
