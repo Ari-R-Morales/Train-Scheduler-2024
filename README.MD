@@ -43,7 +43,7 @@ How to Run the Application:
 3) Choose the Tomcat v10.0 server from the list
 4) Click "Finish" to deploy and run the application
 
-How to Test the System:
+Application Credentials
 ------------------------
 Admin Credentials:
 - Username: admin1
