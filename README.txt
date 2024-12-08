@@ -43,16 +43,16 @@ System Features:
 How to Test the System:
 ------------------------
 Admin Credentials:
-- Username: 
-- Password: 
+- Username: admin1
+- Password: admin123
 
 Customer Representative Credentials:
-- Username: 
-- Password: 
+- Username: rep1
+- Password: rep123
 
-Customer Credentials:
-- Username: 
-- Password: 
+One Customer's Credentials:
+- Username: ayushkgu
+- Password: 123
 
 ----------------------------------------
 
