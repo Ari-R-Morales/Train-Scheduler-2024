@@ -10,7 +10,7 @@ Team Members:
 
 ----------------------------------------
 
-About RUTransit
+### About RUTransit
 ---------------
 RUTransit is an online train reservation system that enables the following functionalities:
 
@@ -39,6 +39,13 @@ System Features:
 - Admin Role: Manages system users (excluding admin accounts), monitors sales, and oversees the functionality of the entire reservation system.
 
 ----------------------------------------
+
+How to Run the Application:
+---------------------------
+1) Right-click on the project "Login_Gp36" in your IDE (e.g., Eclipse)
+2) Select "Run As" > "Run on Server"
+3) Choose the Tomcat v10.0 server from the list
+4) Click "Finish" to deploy and run the application
 
 How to Test the System:
 ------------------------
