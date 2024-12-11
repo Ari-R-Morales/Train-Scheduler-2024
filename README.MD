@@ -59,7 +59,8 @@ One Customer's Credentials:
 
 Demo Video
 -----------
-A demo video is available to showcase the functionality of the RUTransit Reservation System. You can view it here: [Demo Video Link]
+A demo video is available to showcase the functionality of the RUTransit Reservation System. You can view it here: [Demo Video Link](https://drive.google.com/file/d/1UhCS3R5uDLBZmoqM7WgZeegjtitZLWYP/view?usp=sharing) 
+
 
 
 Contact Information:
